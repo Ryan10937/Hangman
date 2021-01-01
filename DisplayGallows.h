@@ -3,6 +3,8 @@
 using namespace std;
 
 void DisplayGallows(int GB_NbrIncorrect);
+////////////////////////////////////wooooo
 
+/////hoooooooooooooooo
 
 #endif // DISPLAYGALLOWS_H_INCLUDED
