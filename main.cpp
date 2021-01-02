@@ -85,7 +85,7 @@ int main()
 				loopGame = false;
 				validPlayAgain = false;
 			}
-			else if (playAgain == "Yes")
+			else if (playAgain == "yes")
 			{
 				loopGame = true;
 				validPlayAgain = false;
