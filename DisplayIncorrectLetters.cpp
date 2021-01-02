@@ -11,9 +11,9 @@ using namespace std;
 void DisplayIncorrectLetters(string GB_IncLetters)
 {
     //cout <<"Display Incorrect Letters Functions called successfully" <<endl;
-    int color = 7;
+    int color = 0;
     HANDLE  hConsole;
-	color = 12; //1-15 range from light green to white.  7 is the defaut
+	color = 11; //1-15 range from light green to white.  7 is the defaut
     hConsole = GetStdHandle(STD_OUTPUT_HANDLE);
     SetConsoleTextAttribute(hConsole, color);
 
