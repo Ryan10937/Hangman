@@ -1,0 +1,101 @@
+# depslib dependency file v1.0
+1609518996 source:c:\users\sterzenbach\documents\downloads\teamhangman2\displaygallows.cpp
+	<iostream>
+	<string>
+	<vector>
+	<ctime>
+	"DisplayGallows.h"
+
+1609518996 c:\users\sterzenbach\documents\downloads\teamhangman2\displaygallows.h
+
+1609522774 source:c:\users\sterzenbach\documents\downloads\teamhangman2\displayguessword.cpp
+	<iostream>
+	<string>
+	<vector>
+	<ctime>
+	"DisplayGuessWord.h"
+
+1609518996 c:\users\sterzenbach\documents\downloads\teamhangman2\displayguessword.h
+
+1609529682 source:c:\users\sterzenbach\documents\downloads\teamhangman2\displayincorrectletters.cpp
+	<iostream>
+	<string>
+	<vector>
+	<ctime>
+	<windows.h>
+	"DisplayIncorrectLetters.h"
+
+1609518996 c:\users\sterzenbach\documents\downloads\teamhangman2\displayincorrectletters.h
+
+1609519553 source:c:\users\sterzenbach\documents\downloads\teamhangman2\gameboard.cpp
+	<iostream>
+	<string>
+	<vector>
+	<ctime>
+	"Gameboard.h"
+	"DisplayIncorrectLetters.h"
+	"DisplayGallows.h"
+	"DisplayGuessWord.h"
+
+1609518997 c:\users\sterzenbach\documents\downloads\teamhangman2\gameboard.h
+
+1609518997 source:c:\users\sterzenbach\documents\downloads\teamhangman2\greeting.cpp
+	<iostream>
+	"Greeting.h"
+	"TimeOfDay.h"
+
+1609518997 c:\users\sterzenbach\documents\downloads\teamhangman2\greeting.h
+
+1609518997 c:\users\sterzenbach\documents\downloads\teamhangman2\timeofday.h
+	<iostream>
+
+1609519595 source:c:\users\sterzenbach\documents\downloads\teamhangman2\loadwordfile.cpp
+	<iostream>
+	<fstream>
+	<string>
+	<vector>
+	<ctime>
+	"LoadWordFile.h"
+
+1609518997 c:\users\sterzenbach\documents\downloads\teamhangman2\loadwordfile.h
+	<vector>
+
+1609518997 source:c:\users\sterzenbach\documents\downloads\teamhangman2\selectdifficulty.cpp
+	<iostream>
+	"SelectDifficulty.h"
+	"UserInputErrorChecking.h"
+
+1609518997 c:\users\sterzenbach\documents\downloads\teamhangman2\selectdifficulty.h
+
+1609518997 c:\users\sterzenbach\documents\downloads\teamhangman2\userinputerrorchecking.h
+
+1609518997 source:c:\users\sterzenbach\documents\downloads\teamhangman2\timeofday.cpp
+	<iostream>
+	<ctime>
+	"TimeOfDay.h"
+
+1609518997 source:c:\users\sterzenbach\documents\downloads\teamhangman2\userguess.cpp
+	<iostream>
+	<string>
+	"UserGuess.h"
+	"UserInputErrorChecking.h"
+
+1609518997 c:\users\sterzenbach\documents\downloads\teamhangman2\userguess.h
+
+1609518997 source:c:\users\sterzenbach\documents\downloads\teamhangman2\userinputerrorchecking.cpp
+	<iostream>
+	"UserInputErrorChecking.h"
+
+1609523062 source:c:\users\sterzenbach\documents\downloads\teamhangman2\main.cpp
+	<iostream>
+	"Greeting.h"
+	"SelectDifficulty.h"
+	"TimeOfDay.h"
+	"UserGuess.h"
+	"LoadWordFile.h"
+	"UserInputErrorChecking.h"
+	"DisplayGallows.h"
+	"DisplayGuessWord.h"
+	"DisplayIncorrectLetters.h"
+	"Gameboard.h"
+

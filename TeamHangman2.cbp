@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="TeamHangman2" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/TeamHangman2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/TeamHangman2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="DisplayGallows.cpp" />
+		<Unit filename="DisplayGallows.h" />
+		<Unit filename="DisplayGuessWord.cpp" />
+		<Unit filename="DisplayGuessWord.h" />
+		<Unit filename="DisplayIncorrectLetters.cpp" />
+		<Unit filename="DisplayIncorrectLetters.h" />
+		<Unit filename="Gameboard.cpp" />
+		<Unit filename="Gameboard.h" />
+		<Unit filename="Greeting.cpp" />
+		<Unit filename="Greeting.h" />
+		<Unit filename="LoadWordFile.cpp" />
+		<Unit filename="LoadWordFile.h" />
+		<Unit filename="SelectDifficulty.cpp" />
+		<Unit filename="SelectDifficulty.h" />
+		<Unit filename="TimeOfDay.cpp" />
+		<Unit filename="TimeOfDay.h" />
+		<Unit filename="UserGuess.cpp" />
+		<Unit filename="UserGuess.h" />
+		<Unit filename="UserInputErrorChecking.cpp" />
+		<Unit filename="UserInputErrorChecking.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

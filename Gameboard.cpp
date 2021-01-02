@@ -13,7 +13,7 @@ void Gameboard(int GB_NbrIncorrect, string GB_Word, string GB_IncLetters)
 {
     //cout <<"Gameboard function called successfully" <<endl;
     DisplayIncorrectLetters(GB_IncLetters);
-    GB_NbrIncorrect = 0;
+    //GB_NbrIncorrect = 0;
     DisplayGallows(GB_NbrIncorrect);
     DisplayGuessWord(GB_Word);
 }

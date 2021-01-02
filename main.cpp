@@ -8,20 +8,29 @@
 #include "DisplayGallows.h"
 #include "DisplayGuessWord.h"
 #include "DisplayIncorrectLetters.h"
+#include "Gameboard.h"
 
 int main()
 {
-	static std::string answer;
-	static std::string guessed;
-	static std::string currentWord;
+	static std::string answer = "";
+	static std::string guessed = "";
+	static std::string currentWord = "";
 
 	bool loopGame = true;
-	bool validPlayAgain = true;
-	bool win = false;
+	bool validPlayAgain;
+	bool win;
 	std::string playAgain;
 
 	while(loopGame)
 	{
+        validPlayAgain = true;
+        win = false;
+        playAgain = true;
+
+        answer = "";
+        guessed = "";
+        currentWord = "";
+
 		Greeting();
 
 		//gets and sets a word based on difficulty
@@ -33,14 +42,13 @@ int main()
 			currentWord += "_";
 		}
 
+        Gameboard(guessed.length(), currentWord, guessed);
+
 		//loops through game until all guess are up
 		while (guessed.length() < 6 && !win)
 		{
 			UserGuess(answer, guessed, currentWord);
-			
-			DisplayGallows(guessed.length());
-			DisplayIncorrectLetters(guessed);
-			DisplayGuessWord(currentWord);
+			Gameboard(guessed.length(), currentWord, guessed);
 
 			win = true;
 			for (char x : currentWord)
@@ -56,14 +64,15 @@ int main()
 		if (!win)
 		{
 			std::cout << "You lose. Loser." << std::endl;
+            Gameboard(guessed.length(), answer, guessed);
 		}
 		else
 		{
 			std::cout << "You win! Probably on easy no doubt..." << std::endl;
+            Gameboard(guessed.length(), answer, guessed);
 		}
 
 		//Set to loop game again or not, based on input
-		loopGame = false;
 		std::cout << "Do you want to play again? Enter Yes or No: ";
 		while (validPlayAgain)
 		{
@@ -92,7 +101,7 @@ int main()
 			}
 		}
 	}
-	
+
 
 	return 0;
 }

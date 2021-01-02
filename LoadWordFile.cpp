@@ -49,11 +49,11 @@ string LoadWordFile(int LWF_Difficulty)
     else
         cout <<" Unable to open Word File" <<endl;
 
-    cout <<"Size of Word Vector: " <<Words.size() <<endl;
+//    cout <<"Size of Word Vector: " <<Words.size() <<endl;
     srand(time(0));
     int RcdSelected = 0;
     RcdSelected = rand() % (Words.size());
-    cout <<"RcdSelected is: " <<RcdSelected <<endl;
+//    cout <<"RcdSelected is: " <<RcdSelected <<endl;
     iWord = Words[RcdSelected];
     return iWord;
 }
